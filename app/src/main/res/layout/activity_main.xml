@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.component.play.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ma_score_tv_id"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/_10_dp"
+        android:paddingBottom="@dimen/_15_dp"
+        android:textSize="@dimen/_16sp"
+        android:background="@drawable/custom_rectangle_with_stoke"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_button_shape_sqaure"
+        app:backgroundTint="@color/colorOrange"
+        app:layout_constraintTop_toBottomOf="@+id/ma_score_tv_id"
+        android:id="@+id/ma_button_orange_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ma_button_blue_id"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="1:1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_button_shape_sqaure"
+        android:id="@+id/ma_button_blue_id"
+        app:backgroundTint="@color/colorBlue"
+        app:layout_constraintTop_toBottomOf="@+id/ma_score_tv_id"
+        app:layout_constraintStart_toEndOf="@id/ma_button_orange_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="1:1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_button_shape_sqaure"
+        app:backgroundTint="@color/colorYellow"
+        app:layout_constraintTop_toBottomOf="@+id/ma_button_orange_id"
+        android:id="@+id/ma_button_yellow_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ma_button_green_id"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="1:1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_button_shape_sqaure"
+        android:id="@+id/ma_button_green_id"
+        app:backgroundTint="@color/colorGreen"
+        app:layout_constraintTop_toBottomOf="@+id/ma_button_orange_id"
+        app:layout_constraintStart_toEndOf="@id/ma_button_yellow_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="1:1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
