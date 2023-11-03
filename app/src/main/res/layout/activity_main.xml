@@ -20,6 +20,7 @@
         android:paddingTop="@dimen/_10_dp"
         android:paddingBottom="@dimen/_15_dp"
         android:textSize="@dimen/_16sp"
+        android:text="@string/app_name"
         android:background="@drawable/custom_rectangle_with_stoke"
         />
 
